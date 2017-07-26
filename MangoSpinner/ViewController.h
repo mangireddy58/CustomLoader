@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GlobalViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController :GlobalViewController
 
+- (IBAction)showAction:(id)sender;
+- (IBAction)hideAction:(id)sender;
 
 @end
 

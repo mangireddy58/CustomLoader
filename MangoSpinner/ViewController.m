@@ -16,14 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self addProgressIndicator];
+    [self hideProgressIndicator];
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Show loader
+- (IBAction)showAction:(id)sender {
+    [self showProgressIndicator];
 }
-
-
+#pragma mark - Hide loader
+- (IBAction)hideAction:(id)sender {
+//    [self hideProgressIndicator];
+}
 @end

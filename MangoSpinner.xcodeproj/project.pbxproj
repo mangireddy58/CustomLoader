@@ -13,6 +13,11 @@
 		4A44648A1F28C8470080A5EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4464881F28C8470080A5EC /* Main.storyboard */; };
 		4A44648C1F28C8470080A5EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A44648B1F28C8470080A5EC /* Assets.xcassets */; };
 		4A44648F1F28C8470080A5EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A44648D1F28C8470080A5EC /* LaunchScreen.storyboard */; };
+		4A44649E1F28C8980080A5EC /* RTSpinKitFadingCircleAltAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4464981F28C8980080A5EC /* RTSpinKitFadingCircleAltAnimation.m */; };
+		4A44649F1F28C8980080A5EC /* RTSpinKitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A44649B1F28C8980080A5EC /* RTSpinKitView.m */; };
+		4A4464A01F28C8980080A5EC /* RTSpinKitUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A44649D1F28C8980080A5EC /* RTSpinKitUtils.m */; };
+		4A4464A21F28C8C20080A5EC /* bg_loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4464A11F28C8C20080A5EC /* bg_loading.png */; };
+		4A4464A91F28C93D0080A5EC /* GlobalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4464A81F28C93D0080A5EC /* GlobalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		4A44648B1F28C8470080A5EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A44648E1F28C8470080A5EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A4464901F28C8470080A5EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A4464971F28C8980080A5EC /* RTSpinKitFadingCircleAltAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSpinKitFadingCircleAltAnimation.h; sourceTree = "<group>"; };
+		4A4464981F28C8980080A5EC /* RTSpinKitFadingCircleAltAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSpinKitFadingCircleAltAnimation.m; sourceTree = "<group>"; };
+		4A4464991F28C8980080A5EC /* RTSpinKitAnimating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSpinKitAnimating.h; sourceTree = "<group>"; };
+		4A44649A1F28C8980080A5EC /* RTSpinKitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSpinKitView.h; sourceTree = "<group>"; };
+		4A44649B1F28C8980080A5EC /* RTSpinKitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSpinKitView.m; sourceTree = "<group>"; };
+		4A44649C1F28C8980080A5EC /* RTSpinKitUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSpinKitUtils.h; sourceTree = "<group>"; };
+		4A44649D1F28C8980080A5EC /* RTSpinKitUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSpinKitUtils.m; sourceTree = "<group>"; };
+		4A4464A11F28C8C20080A5EC /* bg_loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_loading.png; sourceTree = "<group>"; };
+		4A4464A71F28C93D0080A5EC /* GlobalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalViewController.h; sourceTree = "<group>"; };
+		4A4464A81F28C93D0080A5EC /* GlobalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +73,8 @@
 		4A44647E1F28C8470080A5EC /* MangoSpinner */ = {
 			isa = PBXGroup;
 			children = (
-				4A4464821F28C8470080A5EC /* AppDelegate.h */,
-				4A4464831F28C8470080A5EC /* AppDelegate.m */,
-				4A4464851F28C8470080A5EC /* ViewController.h */,
-				4A4464861F28C8470080A5EC /* ViewController.m */,
+				4A4464A31F28C8DC0080A5EC /* ViewControllers */,
+				4A4464961F28C8880080A5EC /* Spinner */,
 				4A4464881F28C8470080A5EC /* Main.storyboard */,
 				4A44648B1F28C8470080A5EC /* Assets.xcassets */,
 				4A44648D1F28C8470080A5EC /* LaunchScreen.storyboard */,
@@ -77,6 +90,58 @@
 				4A4464801F28C8470080A5EC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A4464961F28C8880080A5EC /* Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				4A4464A11F28C8C20080A5EC /* bg_loading.png */,
+				4A4464971F28C8980080A5EC /* RTSpinKitFadingCircleAltAnimation.h */,
+				4A4464981F28C8980080A5EC /* RTSpinKitFadingCircleAltAnimation.m */,
+				4A4464991F28C8980080A5EC /* RTSpinKitAnimating.h */,
+				4A44649A1F28C8980080A5EC /* RTSpinKitView.h */,
+				4A44649B1F28C8980080A5EC /* RTSpinKitView.m */,
+				4A44649C1F28C8980080A5EC /* RTSpinKitUtils.h */,
+				4A44649D1F28C8980080A5EC /* RTSpinKitUtils.m */,
+			);
+			name = Spinner;
+			sourceTree = "<group>";
+		};
+		4A4464A31F28C8DC0080A5EC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A4464A61F28C92B0080A5EC /* GlobalController */,
+				4A4464A51F28C9020080A5EC /* ViewController */,
+				4A4464A41F28C8EF0080A5EC /* AppDelagate */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4A4464A41F28C8EF0080A5EC /* AppDelagate */ = {
+			isa = PBXGroup;
+			children = (
+				4A4464821F28C8470080A5EC /* AppDelegate.h */,
+				4A4464831F28C8470080A5EC /* AppDelegate.m */,
+			);
+			name = AppDelagate;
+			sourceTree = "<group>";
+		};
+		4A4464A51F28C9020080A5EC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4A4464851F28C8470080A5EC /* ViewController.h */,
+				4A4464861F28C8470080A5EC /* ViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		4A4464A61F28C92B0080A5EC /* GlobalController */ = {
+			isa = PBXGroup;
+			children = (
+				4A4464A71F28C93D0080A5EC /* GlobalViewController.h */,
+				4A4464A81F28C93D0080A5EC /* GlobalViewController.m */,
+			);
+			name = GlobalController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +206,7 @@
 				4A44648F1F28C8470080A5EC /* LaunchScreen.storyboard in Resources */,
 				4A44648C1F28C8470080A5EC /* Assets.xcassets in Resources */,
 				4A44648A1F28C8470080A5EC /* Main.storyboard in Resources */,
+				4A4464A21F28C8C20080A5EC /* bg_loading.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,8 +217,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A4464A01F28C8980080A5EC /* RTSpinKitUtils.m in Sources */,
+				4A4464A91F28C93D0080A5EC /* GlobalViewController.m in Sources */,
 				4A4464871F28C8470080A5EC /* ViewController.m in Sources */,
+				4A44649F1F28C8980080A5EC /* RTSpinKitView.m in Sources */,
 				4A4464841F28C8470080A5EC /* AppDelegate.m in Sources */,
+				4A44649E1F28C8980080A5EC /* RTSpinKitFadingCircleAltAnimation.m in Sources */,
 				4A4464811F28C8470080A5EC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +345,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MR2PX4Y62Y;
 				INFOPLIST_FILE = MangoSpinner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.MangoSpinner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,6 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MR2PX4Y62Y;
 				INFOPLIST_FILE = MangoSpinner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.MangoSpinner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
